@@ -1,0 +1,6 @@
+nav{
+	border-bottom: 3px solid black;
+	height: 200px;
+	size: 46px;
+}
+

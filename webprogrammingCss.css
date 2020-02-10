@@ -1,0 +1,30 @@
+nav{
+	border-bottom: 10px solid gray;
+	font-size:72px;
+	color:white;height:auto;
+
+
+}
+
+body{
+	background-color: black;
+	color:white;
+}
+
+mark{
+	background-color:#46679c;
+	color:white;
+}
+
+#HW{
+
+	font-size:33px;
+	border-bottom: 10px solid gray;
+	height:700px;
+}
+
+a{
+	color:white;
+	border-bottom:none;
+}
+
