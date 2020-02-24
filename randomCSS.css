@@ -1,0 +1,21 @@
+iframe{
+	border:none;
+
+}
+
+.jumbotron{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+	height:auto;
+	padding-top:60px;
+	background-color:inherit;
+}
+
+.jumbotron iframe{
+	display:flex;
+	justify-content: center;
+	margin-top:10px;
+
+}

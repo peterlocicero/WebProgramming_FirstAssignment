@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Pretty Text</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="randomJS.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="randomCSS.css">
+</head>
+<body onload="asyncCall()">
+
+
+<div class="jumbotron">
+  <h1  id ="word" class="lead"></h1>
+  <iframe id="displayWord"></iframe>
+  <hr class="my-4">
+  <p id="definition"></p>
+  <a class="btn btn-primary btn-lg" role="button" onclick="asyncCall()">New Definition</a>
+
+
+
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<p> Basically, to do this assignment I used 3 different APIS, kind of. I'm using a <a href="https://random-word-api.herokuapp.com/">random word api </a>. Initially I wanted to make it more ascii related to keep with the theme I started last week because I think ascii art is kind of cool. I wanted to use this <a href="http://artii.herokuapp.com/">ascii art api </a> but when trying to access the website using fetch, I get this error: Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://artii.herokuapp.com/make?text=captionless. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing).
+
+<br>
+<Br>
+
+  I tried for a few hours to be able to get it to work because I'm stubborn but reading about CORS kind of went over my head. I think basically the website just doesn't allow permissions for web projects to access the website. I did found out that fetch takes a bunch of parameters and after playing with it I found out if I set fetch to not use cors I can access the website but not get any information from it... so not very helpful. Eventually I just went with a hacky approach and used an Iframe with the style hidden to display the word. 
+
+  <br>
+  <br>
+
+I also added definitions from a <a href="https://www.wordsapi.com/"> definition api </a> to add more content. The experience I am trying to give the user is to be able to learn new words in an easy way. I am also experimenting with different website styles to figure out what I like and I'm trying to give it a more simplistic or minimalistic style. I had some difficult getting the ifile centered and displayed properly so it's kind of hacky and looks weird on smaller screens.
+
+
+<br>
+<Br>
+
+The readings this week are interesting, and I actually find it cool to learn about infastructure.  I liked the Oliver reading more because of the way it is written but hearing about issues at an actual center is interesting as well as I would have never thought that could be an actual problem. The internet seems kind of magic but as I learn more about it, it starts to make more sense. However at the same time the more I learn about server stuff and I guess programming in general I realize how little I actually know about it.  Kind of keeps you honest I guess, there's so much to learn. Whenever I am in class I feel like I have a good grasp of the material but the second I start looking at other people's code or see different solutions to a problem I feel like I know almost nothing. Anyway, I'm kind of rambling now but I figured I'd tell you a bit about where my head is at. 
+
+<br>
+<Br>
+
+</p>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
