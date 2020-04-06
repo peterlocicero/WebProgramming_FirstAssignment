@@ -1,0 +1,72 @@
+#parent {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(7, 1fr);
+grid-column-gap: 11px;
+grid-row-gap: 0px;
+}
+
+#game{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+    min-height: 1250px;
+}
+
+
+#game h1{
+  color:white;
+  border-bottom: 5px solid black;
+   margin-top: 0;
+   font-size: .9em;
+}
+
+
+.questions{
+  background-color:blue;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid black;
+  color:#efec2b;
+  font-size:4em;
+  margin-bottom: 0.67em;
+}
+
+.title{
+  min-width: 250px;
+  
+}
+
+
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 15%;
+	left: 25%;
+	width: 50%;
+	height: 60%;
+	padding: 16px;
+	border: 16px solid black;
+	background-color: blue;
+  color: white;
+  font-size: 6em;
+	z-index:1002;
+	overflow: auto;
+  align-items: center;
+}
